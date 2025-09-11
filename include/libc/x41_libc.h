@@ -1,0 +1,15 @@
+#ifndef	X41_LIBC_H
+#define	X41_LIBC_H
+
+#include	"x41_types.h"
+
+#define	STDIN	0
+#define	STDOUT	1
+#define STDERR	2
+#define	ERROR	-1
+#define	SUCCESS	0
+
+ssize_t	x41_write(int fd, const void *buf, size_t n);
+int		x41_putchar(int c);
+
+#endif
