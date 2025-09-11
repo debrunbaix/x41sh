@@ -2,6 +2,6 @@
 
 int		main(int argc, char **argv, char **envp)
 {
-		x41_putchar('X');
-		return 0;
+		x41_puts("Hello!");
+		return SUCCESS;
 }

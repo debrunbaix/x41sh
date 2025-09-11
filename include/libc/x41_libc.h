@@ -11,5 +11,6 @@
 
 ssize_t	x41_write(int fd, const void *buf, size_t n);
 int		x41_putchar(int c);
+int		x41_puts(const char *s);
 
 #endif
