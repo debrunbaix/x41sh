@@ -5,7 +5,7 @@ int		x41_puts(const char *s)
 		int	i;
 		ssize_t	ret;
 		
-		ret = x41_write(1, s, sizeof(s));
+		ret = x41_write(1, s, x41_strlen(s));
 		x41_putchar('\n');
 		return	ret;
 }
