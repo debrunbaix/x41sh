@@ -2,6 +2,6 @@
 
 int		main(int argc, char **argv, char **envp)
 {
-		x41_puts("Hello, Friend!");
+		x41_putnbr(125);
 		return SUCCESS;
 }
