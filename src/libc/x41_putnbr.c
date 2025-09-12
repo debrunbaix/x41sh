@@ -9,9 +9,15 @@
  */
 int		recursion(int num)
 {
-		int	ret;
-		char ch_n = (num % 10) + INT_TO_CH;
+		int		ret;
+		char	negative = '-';
 
+		if (num < 0)
+		{
+				num -= num * 2;
+				x41_write(1, &negative, 1);
+		}
+		char ch_n = (num % 10) + INT_TO_CH;
 		if (num > 0)
 		{
 				recursion(num / 10);
@@ -27,5 +33,10 @@ int		x41_putnbr(int num)
 {
 		int	ret;
 
-		return	recursion(num);
+		if (num == 0)
+		{
+				char zero = '0';
+				return x41_write(1, &zero, 1);
+		}
+		else return recursion(num);
 }
