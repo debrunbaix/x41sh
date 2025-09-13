@@ -2,5 +2,6 @@
 
 int		main(int argc, char **argv, char **envp)
 {
+		x41_exit(10);
 		return SUCCESS;
 }

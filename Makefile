@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -c -fno-stack-protector
+CFLAGS = -g -c -fno-stack-protector
 LDFLAGS = -e _start
 
 SRCDIR = src
