@@ -15,5 +15,6 @@ int		x41_puts(const char *s);
 size_t	x41_strlen(const char *s);
 int		x41_putnbr(int num);
 int		x41_strcmp(const char *s1, const char *s2);
+int		x41_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
