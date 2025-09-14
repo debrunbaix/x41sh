@@ -6,6 +6,6 @@ int		x41_putchar(int c)
 		char	ch;
 
 		ch = (char)c;
-		ret = (int)x41_write(1, &c, 1);
+		ret = (int)x41_write(STDOUT, &c, 1);
 		return	ret;
 }

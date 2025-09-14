@@ -15,13 +15,13 @@ int		recursion(int num)
 		if (num < 0)
 		{
 				num -= num * 2;
-				x41_write(1, &negative, 1);
+				x41_write(STDOUT, &negative, 1);
 		}
 		char ch_n = (num % 10) + INT_TO_CH;
 		if (num > 0)
 		{
 				recursion(num / 10);
-				ret = x41_write(1, &ch_n, 1);
+				ret = x41_write(STDOUT, &ch_n, 1);
 		}
 		return ret;
 }
@@ -36,7 +36,7 @@ int		x41_putnbr(int num)
 		if (num == 0)
 		{
 				char zero = '0';
-				return x41_write(1, &zero, 1);
+				return x41_write(STDOUT, &zero, 1);
 		}
 		else return recursion(num);
 }

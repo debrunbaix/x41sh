@@ -1,11 +1,14 @@
 #include	"../../include/libc/x41_libc.h"
 
+/**
+ * Function to display strings withous '\n'.
+ */
 int		x41_puts_util(const char *s)
 {
 		int	i;
 		ssize_t	ret;
 		
-		ret = x41_write(1, s, x41_strlen(s));
+		ret = x41_write(STDOUT, s, x41_strlen(s));
 		return	ret;
 }
 

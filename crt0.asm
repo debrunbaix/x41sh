@@ -5,10 +5,10 @@ _start:
 				; Obtenir argc, argv, envp de la pile
 				mov		rdi, [rsp]
 				lea		rsi, [rsp + 8]
-				lea 	rdx, [rsi + rdi * 8 + 8]
+				lea		rdx, [rsi + rdi * 8 + 8]
 
 				; Appler main(argc, argv, envp)
-				extern main
+				extern	main
 				call	main
 
 				; Appel systeme pour quitter le programme
