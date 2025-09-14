@@ -2,6 +2,6 @@
 
 int		main(int argc, char **argv, char **envp)
 {
-		x41_exit(10);
+		x41_printf("String: %s\nNumber: %d\nChar: %c\n", "Hello, World!", 41, 'X');
 		return SUCCESS;
 }
